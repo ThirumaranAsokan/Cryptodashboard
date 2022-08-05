@@ -1,1 +1,1 @@
-web: python crypt.py
+web: python calculat.py
