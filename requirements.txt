@@ -148,9 +148,6 @@ pathtools==0.1.2
 patsy==0.5.2
 phonenumbers==8.12.52
 pickleshare==0.7.5
-Pillow==9.0.1
-pipfile==0.0.2
-platformdirs==2.5.2
 plotly==5.9.0
 pluggy==1.0.0
 plumbum==1.7.1
@@ -158,7 +155,6 @@ portalocker==2.4.0
 prometheus-client==0.13.1
 prompt-toolkit==3.0.28
 protobuf==3.19.4
-psutil==5.9.1
 punk==3.0.0
 pure-eval==0.2.2
 py==1.11.0
