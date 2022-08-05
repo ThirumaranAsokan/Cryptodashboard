@@ -244,7 +244,7 @@ typing_extensions==4.1.1
 tzdata==2022.1
 tzlocal==4.2
 updater==0.3.2
-urllib3 @ file:///C:/Users/aruni/pipwin/urllib3-1.26.9-py2.py3-none-any.whl
+
 validators==0.20.0
 visitor==0.1.3
 vpython==7.6.3
