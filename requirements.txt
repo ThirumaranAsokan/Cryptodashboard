@@ -148,10 +148,8 @@ pathtools==0.1.2
 patsy==0.5.2
 phonenumbers==8.12.52
 pickleshare==0.7.5
-PIL @ file:///C:/Users/aruni/pipwin/PIL-2.0%2Bdummy-py2.py3-none-any.whl
 Pillow==9.0.1
 pipfile==0.0.2
-pipwin==0.5.2
 platformdirs==2.5.2
 plotly==5.9.0
 pluggy==1.0.0
@@ -167,7 +165,7 @@ py==1.11.0
 pyarrow==8.0.0
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
-PyAudio @ file:///C:/Users/aruni/pipwin/PyAudio-0.2.11-cp310-cp310-win_amd64.whl
+
 pyclustering==0.10.1.2
 pycparser==2.21
 pydeck==0.7.1
