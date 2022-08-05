@@ -162,18 +162,6 @@ pyarrow==8.0.0
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
 
-pyclustering==0.10.1.2
-pycparser==2.21
-pydeck==0.7.1
-Pygments==2.11.2
-pyjsparser==2.7.1
-pylint==2.14.0
-pylint-django==2.5.3
-pylint-plugin-utils==0.7
-PyMeeus==0.5.11
-pymongo==3.12.1
-Pympler==1.0.1
-PyMySQL==1.0.2
 pyowm==3.3.0
 pyparsing==3.0.7
 qtconsole==5.2.2
