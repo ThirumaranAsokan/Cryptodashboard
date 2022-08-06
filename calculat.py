@@ -1,19 +1,19 @@
-import pandas as pd
 import base64
-import streamlit as st
+import json
+import re  # regular expressions
+from datetime import datetime
+from io import StringIO, BytesIO
+from time import mktime
+from urllib.request import urlopen
+
+import matplotlib.pyplot as plt
+import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
-import numpy as np
-import matplotlib.pyplot as plt
 import requests
 import statsmodels.api as sm  # Linear regression
-from datetime import datetime
-from time import mktime
+import streamlit as st
 from bs4 import BeautifulSoup
-import re  # regular expressions
-from io import StringIO, BytesIO
-from urllib.request import Request, urlopen
-import json
 
 st.set_page_config(layout="wide", page_title='Stock Beta App')
 
@@ -310,7 +310,7 @@ fig3 = go.Figure(data=fig1.data + fig2.data,
                          'xaxis': {'title': xAxisTitle},
                          'yaxis': {'title': yAxisTitle}})
 # %% Streamlit Outputs
-st.title("Demo - Stock Beta Calculator")
+st.title("Crypto Calculator")
 
 # KPIs
 col1, col2, col3, col4, col5 = st.columns(5)
@@ -323,18 +323,6 @@ col5.metric("Beta 95% Conf Interval",
 
 st.metric("{} returns".format(intervalDrop),
           "{:%d-%b-%Y} to {:%d-%b-%Y}".format(startDate, endDate))
-
-# PDF Explaining the concepts
-st.header("Background on Beta and Statsmodels OLS")
-st.write("Helpful links:")
-aLinks = '''
-<a href="https://finance.yahoo.com/news/beta-everything-know-measuring-stock-170027831.html" target="_blank">What is Beta - Yahoo Finance</a><br>
-<a href="https://www.statsmodels.org/dev/examples/notebooks/generated/ols.html" target="_blank">statsmodels - OLS</a><br>
-<a href="https://marqueegroup.ca/course/python-2-visualization-and-analysis/" target="_blank">Marquee Python Course</a>
-'''
-st.markdown(aLinks, unsafe_allow_html=True)
-if st.checkbox("Show PDF slides"):
-    displ_pdf("slides-web.pdf")
 
 # Current Price Charts
 st.header('Market Data')
